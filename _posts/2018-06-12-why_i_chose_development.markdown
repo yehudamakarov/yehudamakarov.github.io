@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Why I Chose Development"
-date:       2017-11-11 19:24:32 -0500
+title:      " Why I Chose Development"
+date:       2018-06-12 11:52:54 -0400
 permalink:  why_i_chose_development
 ---
 
