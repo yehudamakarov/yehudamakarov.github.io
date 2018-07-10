@@ -1,10 +1,10 @@
 # Site settings
-title: Making It Work
+title: Making It Work the Way Your Imagination Decided
 header-img: img/home-bg.png
 email: yehudamakarov@gmail.com
 copyright_name: yehudamakarov
 description: > # this means to ignore newlines until "baseurl:"
-  Getting things working can involve a lot of different things.
+  Some ideas that come about from having a UX geared fullStack approach.
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  yehudamakarov
