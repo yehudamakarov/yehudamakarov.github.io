@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "A Mark Down Blog"
-date:       2018-08-14 03:39:25 +0000
+date:       2018-08-13 23:39:26 -0400
 permalink:  a_mark_down_blog
 ---
 
@@ -10,15 +10,15 @@ permalink:  a_mark_down_blog
 
 * You’re starting a rails/react project from scratch, maybe your first.
 
-1. Front End
-  1. Pick your UI framework.
-    1. Be patient with it, everyone needs to know CSS.
-  2. Start imagining how the interface will interact with the database as infrequently as possible. This will often define a large part of the application’s scalability.
-2. Back End
-  1. Serialize the data responsibly.
-    1. Eager loading.
-    2. Minimize nested relationships.
-3. Try to come out with a front end that isn’t totally dependent on the backend for most components being mounted/rendered.
+> Front End
+* Pick your UI framework.
+Be patient with it, everyone needs to know CSS.
+Start imagining how the interface will interact with the database as infrequently as possible. This will often define a large part of the application’s scalability.
+> Back End
+* Serialize the data responsibly.
+* Eager loading.
+* Minimize nested relationships.
+* Try to come out with a front end that isn’t totally dependent on the backend for most components being mounted/rendered.
 
 ### Before Writing Anything
 
