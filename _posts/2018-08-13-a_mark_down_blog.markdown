@@ -135,15 +135,15 @@ Now a browser contacting this app will get a cookie that Rails can use to recogn
 
 ###  Realizing this isn’t the whole picture.
 
-Sometimes you realize you spend a few hours thinking of minor details. Definitely worth it to employ more than this though, because if someone has the admin’s cookie, then what is stopping them from making the server think that their **own** browser is the true owner of the session cookie. Because Rails will get a cookie name and value, that is sent as a response header. (again this is in the developer tools under the developer tools:
+Sometimes you realize you spend a few hours thinking of minor details. Definitely worth it to employ more than this though, because if someone has the admin’s cookie, then what is stopping them from making the server think that their **own** browser is the true owner of the session cookie. Because Rails will get a cookie name and value, that is sent as a response header. (Again this is in the developer tools under the developer tools:
 
 ![Screen Shot 2018-08-13 at 21.50.28.png](https://i.imgur.com/OdOjNlT.png)
 
-That is a POST request to posts, asking to create a post. We send that huge set of strings as response headers.)
+That is a POST request to posts, asking to create a post. We send that huge set of strings as cookies which are sort of like request/response headers.)
 
-Rails gets that in the routes portion of your app. when the controller instance on the server computing unit uses the session hash, it is referencing these values that the browser sent. There is much more going on and I don’t know very much. But this is essentially your session identity if you want to use the session store. any other session data is accessible with that cookie as far as I know. So if you’re not using SSL, maybe this is problematic.
+Rails gets that in the routes portion of your app. when the controller instance on the server computing unit uses the session hash, it is referencing these values that the browser sent. There is much more going on and I don’t know very much. But this is essentially your session identity if you want to use the session store. any other session data is accessible with that cookie as far as I know. So if you’re not using SSL, maybe this is problematic. That session information being traded back and forth should be locked down. And you might want to make sure the session cookies expire after a given amount of time.
 
-JWT is now very helpful. And you might want to make sure the session cookies expire after a given amount of time.
+This is where JWT is helpful, and you might want to check it out.
 
 
 
