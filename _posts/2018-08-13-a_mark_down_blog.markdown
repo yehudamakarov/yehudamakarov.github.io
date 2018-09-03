@@ -8,7 +8,7 @@ permalink:  a_mark_down_blog
 
 ### General Points
 
-* You’re starting a rails/react project from scratch, maybe your first.
+You’re starting a rails/react project from scratch, maybe your first.
 
 > Front End
 * Pick your UI framework.
