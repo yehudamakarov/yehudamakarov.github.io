@@ -14,6 +14,7 @@ permalink:  a_mark_down_blog
 * Pick your UI framework.
 Be patient with it, everyone needs to know CSS.
 Start imagining how the interface will interact with the database as infrequently as possible. This will often define a large part of the application’s scalability.
+
 > Back End
 * Serialize the data responsibly.
 * Eager loading.
