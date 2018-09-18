@@ -1,11 +1,11 @@
 # Site settings
 author: Yehuda Makarov
-title: Making It Work the Way Your Imagination Decided
+title: Making It Work the Way Imagination Decided
 header-img: img/home-bg.png
 email: yehudamakarov@gmail.com
 copyright_name: Yehuda Makarov
 description: > # this means to ignore newlines until "baseurl:"
-  Some musings that occurred over the course of my development journey.
+  If one says "I tried, and I succeeded", believe him.
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  yehudamakarov
