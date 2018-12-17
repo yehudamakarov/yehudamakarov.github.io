@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "Fetch Vs. Axios"
-date:       2018-09-03 22:35:50 +0000
+date:       2018-09-03 18:35:51 -0400
 permalink:  fetch_vs_axios
 ---
 
 
-To enable your client to contact your database, you will probably end up using something like fetch, axios, or superagent. I want to share why I settled on axios instead of fetch.
+To enable your client to contact your database, you will probably end up using something like fetch, axios, or superagent. I was suggested to share why I settled on axios instead of fetch.
 
-They are both used by the client to make asynchronous calls to a service of some sort. in a React/Redux application, it will be very handy to chain these methods using functions like `​.then()`​ and `​.catch`​ etc.
+They are both used by the client to make asynchronous calls to a service of some sort. In a React/Redux application, it will be very handy to chain these methods using functions like `​.then()`​ and `​.catch`​ etc.
 
 If there is a component that uses a Redux Thunk action, we can code out the main aspects of the request and response logic in the action. And if we want our component to react accordingly, we can keep its logic to itself. Consider:
 
@@ -40,7 +40,7 @@ const addPostAction = newPostFromState => dispatch =>
         })
 ```
 
-`​addPostAction`​ returns a function that takes the `dispatch`​ function as an argument. Because of this functionality, the `addPostAction` can deal with `.then`​ and such.
+`​addPostAction`​ returns a function that takes the `dispatch`​ function as an argument. Because of this functionality, the `addPostAction` can deal with `.then`​ and such. (It is thenable.)
 
 `​addPostAction`​ points to a function that will return a function that can use `​.then`​ or `​.catch`​. Therefore it can also use `​.then`​ or `​.catch`​.
 
